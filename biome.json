@@ -1,7 +1,13 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
   "files": {
-    "ignore": ["node_modules"]
+    "ignore": [
+      "node_modules",
+      ".next",
+      ".vscode",
+      "public",
+      "src/app/globals.css"
+    ]
   },
   "formatter": {
     "indentStyle": "space",
@@ -20,6 +26,9 @@
   "linter": {
     "enabled": true,
     "rules": {
+      "style": {
+        "noUnusedTemplateLiteral": "warn"
+      },
       "a11y": {
         "noSvgWithoutTitle": "off"
       },
