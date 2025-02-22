@@ -27,6 +27,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "globals": "^16.0.0",
+    "orval": "^7.5.0",
     "typescript": "^5"
   }
 }
